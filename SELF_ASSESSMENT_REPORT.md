@@ -1,11 +1,11 @@
 # Self-assessment — IA#1
 
-Student ID: `[STUDENT_ID]`  
-Full name: `[FULL_NAME]`  
-Repository URL: `[REPOSITORY_URL]`  
+Student ID: 24120218  
+Full name: Nguyễn Đức Quân  
+Repository URL: https://github.com/Ducquanbm2/Wad-cart-starter  
 Total I claim: 100 / 100
 
-| Criterion | Max | I claim | Evidence                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| Criterion | Max | Claim | Evidence                                                                                                                                                                                                                                                                                                                                                                                                                                          |
 | --------- | --: | ------: | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Behaviour |  30 |      30 | `src/cart.js` implements `cartTotal` with subtotal, VAT, inclusive `>= freeShipFrom` free-shipping logic, below-threshold `shipFee`, empty-cart result `0`, and `RangeError` validation for negative prices and zero, negative, or fractional quantities. The final result uses `Math.round` and remains a numeric value. The worked example returns `467400` (467,400đ). No runtime dependency is added. Implementation commit: 3ee9534.         |
 | Tests     |  20 |      20 | `test/cart.test.js` uses only native `node:test` and `node:assert/strict`. It covers the worked example, empty carts, values below/at/above `freeShipFrom`, zero-price/promotional items, arithmetic rounding, numeric return type, and every required `RangeError` case, including invalid values on later items. The initial red state was preserved before implementation. Test result: `0 failures` after verification. Test commit: 2a0faab. |
